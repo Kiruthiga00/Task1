@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .Container{
+           /* border: 1px solid black;*/
+            height: 100vh;
+            width: 65vw;
+            display: grid;
+            grid-template-columns:10fr 20fr;
+            margin: auto;
+        }
+        .left{
+           /* border: 1px solid red;*/
+            padding: 30px;
+            background-color: rgba(43, 0, 255, 0.19);
+            
+        }
+        img{
+            border: 1px solid green;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-left: 90px;
+        }
+        p{
+            padding-bottom: 15px;
+        }
+        ul{
+            padding-bottom: 15px;
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        h2{
+            padding-bottom: 5px;
+        }
+        
+        .right{
+           /* border: 1px solid blue;*/
+            padding-left: 20px;
+            background-color:whitesmoke 
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        h3{
+            padding-bottom: 5px;
+        }
+        a{
+            padding-top: 7px;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .certificates{
+    margin-top:20px;
+    
+}
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.cert h4{
+    font-size:16px;
+    text-decoration:underline;
+    color:gray;
+    margin-bottom:5px;
+}
+
+.cert p{
+    color:grey;
+    font-size:14px;
+}
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="left">
+            <img src="https://t3.ftcdn.net/jpg/07/28/48/98/360_F_728489827_qtQHjlMEeD53QhTdUEtdOvNPQw21pYjh.jpg" alt="avatar">
+            <h2>contacts</h2>
+            <hr>
+            <h3>phone</h3>
+            <p>1111111111</p>
+
+            <h3>email</h3>
+            <p>mabel13@gmail.com</p>
+
+            <h3>portfolio</h3>
+            <p>mabel13.web.app</p>
+
+            <h3>address</h3>
+            <p>kanniyakumari,india</p>
+
+            <h2>skills</h2>
+            <hr>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>python</li>
+                <li>javascript</li>
+                <li>typescript</li>
+            </ul>
+
+            <h2>Soft Skills</h2>
+            <hr>
+            <ul>
+                <li>problem-solving</li>
+                <li>communication</li>
+            </ul>
+
+            <h2>language</h2>
+            <hr>
+            <ul>
+                <li>tamil</li>
+                <li>english</li>
+                <li>malyalam</li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <h1>Mabel Florence</h1>
+            <h3>Fullstack software engineer</h3>
+            <p>Seeking a challenging Full-Stack Software Engineer position at a
+                forward-thinking company, where I can leverage my experience in
+                MERN stack development and passion for creating innovative web
+                solutions to deliver exceptional results and make a significant impact.</p>
+
+                <h2>Experience</h2>
+                <hr>
+                <a href="">Livwell</a>
+                <h3>Fullstack Engineer</h3>
+                <ul>
+                    <li>Managed company admin portals using Angular.</li>
+                    <li>Developed engaging landing pages using React.</li>
+                    <li>Worked with cross-functional teams.</li>
+                    <li>Managed backend APIs and scalability.</li>
+                    <li>Created multilingual product pages.</li>
+                </ul>
+
+                <a href="">Thenightstory.com</a>
+                <h3>Projects</h3>
+                <ul>
+                    <li>Built online story platform using MERN Stack.</li>
+                    <li>Used MongoDB Atlas and AWS services.</li>
+                    <li>Implemented Tailwind CSS UI.</li>
+                    <li>Developed user-friendly interfaces.</li>
+                </ul>
+                <h3>Certificates</h3>
+                <hr>
+                <div class="cert-grid">
+                    <div class="cert">
+                        <h4>web development bootcamp</h4>
+                        <p>Udemy</p>
+                    </div>
+                    <div class="cert">
+                        <h4>Javascript complete guide</h4>
+                        <p>Udemy</p>
+                    </div>
+                    <div class="cert">
+                        <h4>Complete node.js Developer</h4>
+                        <p>Udemy</p>
+                    </div>
+                    <div class="cert">
+                        <h4>Data structure+Algorithm</h4>
+                        <p>Currently</p>
+                    </div>
+                    <div class="cert">
+                        <h4>c programming</h4>
+                        <p>Exe</p>
+                    </div>
+                    <div class="cert">
+                        <h4>C++ programming</h4>
+                        <p>Exe</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</body>
+</html>
