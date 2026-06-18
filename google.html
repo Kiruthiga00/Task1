@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <script src="https://kit.fontawesome.com/ce2c251167.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            /*border:1px solid blue;*/
+            padding: 10px 20px;
+            
+        }
+       
+        .left a,.right a{
+            margin-right:20px;
+            
+        }
+        main{
+            /*border:1px solid red;*/
+            height: 85vh;
+            display:flex;
+            justify-content:column;
+            align-items:center;
+            flex-direction:column;
+            padding:60px 0;
+        }
+       .search{
+            border:1px solid black;
+            padding:15px;
+            margin-top:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap: 10px;
+            border-radius: 20px;
+            
+        }
+        input{
+            font-size: 20px;
+            width: 400px;
+            border:none;
+            outline:none;
+        }
+        nav{
+            display:flex;
+            justify-content:space-between;
+            margin-top: 50px;
+        }
+        nav a{
+            margin-right:8px;
+        }
+        footer{
+            display:flex;
+            justify-content:space-between;
+            /*border:1px solid green;*/
+            padding:20px;
+            color: black;
+
+        }
+        footer a{
+             margin-right:20px;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="">About</a>
+            <a href="">Store</a>  
+        </div>
+        <div class="right">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <i class="fa-solid fa-bars"></i>
+            <img src="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/&ec=futura_exp_og_si_72776762_e" alt="">
+        </div>
+    </header>
+    <main>
+        <img src="https://www.google.com/logos/doodles/2026/world-cup-2026-the-art-of-the-bicycle-kick-617-6753651837111107-law.gif" alt="">
+        <div class="search">
+            <i class="fa-solid fa-plus"></i>
+            <input type="text">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+            <menu><i class="fa-brands fa-searchengin"></i><span>AI mode</span></menu>
+            </div>
+            <nav>
+            <p>Google offered in:</p>
+            <a href="">English</a>
+            <a href="">Español</a>
+            <a href="">Français</a>
+            <a href="">Deutsch</a>
+            <a href="">日本語</a>
+            <a href="">한국어</a>
+            </nav>
+    </main>
+    <footer>
+        <div class="first">
+            <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">How search works</a>
+        </div>
+        <div class="second">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+        </div>
+    </footer>
+</body>
+</html>
