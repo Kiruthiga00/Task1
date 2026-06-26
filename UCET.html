@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ce2c251167.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            /* border: 1px solid black; */
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-left: 35px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* border: 1px solid red; */
+            margin-left: 110px;
+        }
+
+        .navbar a {
+            margin: 9px;
+            text-decoration: none;
+            color: grey;
+            /* border: 1px solid blue; */
+        }
+
+        .navbar a:hover {
+            color: black;
+        }
+
+        .signin {
+            margin-left: 100px;
+            /* border: 1px solid sandybrown; */
+            padding: 7px 12px;
+            border-radius: 15px;
+            color: bisque;
+            background-color: #ffcf59;
+        }
+
+        .signin a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .TAMIL {
+            /* border: 1px solid red; */
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .red {
+            color: red;
+        }
+
+        .TAMIL h1 {
+            color: navy;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+
+        span {
+            color: red;
+        }
+
+        h3 {
+            padding-bottom: 10px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            height: 70vh;
+            /* border: 1px solid blue; */
+        }
+
+        .theory {
+            /* border:1px solid yellow; */
+            margin-top: 60px;
+            font-size: 20px;
+            margin-left: 50px;
+            text-align: justify;
+            color: gray;
+        }
+
+        .picture {
+            /* border: 1px solid green; */
+            height: 450px;
+            width: 600px;
+            margin-left: 70px;
+        }
+
+        .announcement {
+            /* border: 1px solid green; */
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .announce {
+            /* border: 1px solid black; */
+            height: 45px;
+            width: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding-left: 18px;
+            background-color: #ffcf59;
+        }
+
+        .view {
+            /* border: 1px solid black; */
+            height: 45px;
+            width: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            background-color: #ffcf59;
+        }
+
+        .day {
+            /* border: 1px solid red> */
+            width: 1100px;
+            height: 45px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            font-size: 15px;
+            gap: 10px;
+            overflow: hidden;
+        }
+
+        .day a {
+            text-decoration: none;
+            display: inline-block;
+            animation: RL 15s linear infinite;
+            color: #ba0000;
+        }
+
+        @keyframes RL {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .section {
+            /* border:1px solid black; */
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 130px;
+            color: white;
+            background-color: #525fe1;
+        }
+
+        .sec p {
+
+            padding-top: 10px;
+        }
+
+        .vision {
+            /* border: 1px solid black; */
+            height: 22vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            border-radius: 20px;
+            color: white;
+            background-color: #525fe1;
+        }
+
+        .vision p {
+            padding-top: 20px;
+            padding-right: 8px;
+        }
+
+        .mission {
+            /* border-color:1px solid red; */
+            height: 22vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            border-radius: 20px;
+            color: white;
+            background-color: aqua;
+        }
+
+        .mission p {
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+
+        .EVENTS {
+            /* border: 1px solid green; */
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 40px;
+        }
+
+        .event {
+            height: 45px;
+            width: 180px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding-left: 18px;
+            background-color: #ffcf59;
+        }
+
+        .VIEW {
+            /* border: 1px solid black; */
+            height: 45px;
+            width: 230px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            background-color: #ffcf59;
+        }
+
+        .graduation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 15px;
+            gap: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .graduation a {
+            text-decoration: none;
+            display: inline-block;
+            animation: RL 20s linear infinite;
+            color: #ba0000;
+        }
+
+        @keyframes RL {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .section-1 {
+            /* border:1px solid black; */
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 130px;
+            color: white;
+            background-color: #525fe1;
+        }
+
+        .sec-1 p {
+            padding-top: 10px;
+        }
+
+        .department {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            margin: 0 30px;
+            margin-bottom: 40px;
+
+        }
+
+        .dept:hover {
+            transform: scale(105%);
+        }
+
+        .dept {
+            background: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px 15px;
+            margin: 8px 20px;
+            transition: transform 0.5s;
+        }
+
+        .dept a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .dept p {
+            padding-left: 26px;
+            color: rgba(0, 0, 0, 0.611);
+        }
+
+        .center img {
+            width: 320px;
+            height: 200px;
+            border-radius: 15px;
+            object-position: cover;
+            transition: transform 0.5s;
+        }
+
+        .center img:hover {
+            transform: scale(105%);
+        }
+
+        .CENTER {
+            /* border: 1px solid blue; */
+            height: 40vh;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+
+        .center {
+            margin: 20px;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 145px;
+            /* distance from top */
+            left: 20px;
+            /* distance from left */
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .CLUB {
+            /* border: 1px solid black; */
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+        }
+
+        .club {
+            /* border: 1px solid red; */
+            height: 18vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            padding-top: 15px;
+            margin-top: 10px;
+            background-color: whitesmoke;
+            animation: RL 5s linear infinite;
+        }
+
+        @keyframes RL {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .club img {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .club h1 {
+            font-size: 17px;
+            height: 120px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .message {
+            /* border: 1px solid red; */
+            height: 50vh;
+            padding-top: 20px;
+            margin-top: 50px;
+            padding-left: 25px;
+            position: relative;
+            background: linear-gradient(to right,
+                    #FFFDF7,
+                    #FFF5D6,
+                    #F8E6A8);
+        }
+
+        .message h1 {
+            text-decoration: underline rgba(255, 166, 0, 0.786);
+        }
+
+        .message p {
+            /* border: 1px solid black; */
+            text-align: justify;
+            margin-right: 600px;
+            margin-left: 30px;
+            color: #0d1a2a;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+
+        .message h4 {
+            padding-left: 35px;
+        }
+
+        .know {
+            /* border: 1px solid brown; */
+            width: 130px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffcf59;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .know a {
+            text-decoration: none;
+            color: black;
+            /* background-color: #ffcf59; */
+        }
+
+        .img-dean {
+            position: absolute;
+            top: 45px;
+            /* Move down */
+            right: 170px;
+            /* move from right*/
+        }
+
+        .img-dean img {
+            width: 220px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 30px;
+            border: 5px solid #f3c546;
+        }
+
+        .img {
+            /* border: 1px solid black; */
+            height: 80vh;
+            margin-top: 55px;
+            display: flex;
+            width: calc(600px * 6);
+            animation: scroll 18s linear infinite;
+            gap: 20px;
+        }
+
+        .img img {
+            width: 1350px;
+            height: 550px;
+            object-fit: cover;
+            flex-shrink: 0;
+            cursor: stop;
+            border-radius: 20px;
+            /* border: 1px solid black; */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-1800px);
+            }
+        }
+
+        .container {
+            border: 1px solid blue;
+            height: 50vh;
+            margin-top: 50px;
+            background-color: #5863e8;
+            color: white;
+        }
+
+        .footer {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            height: 40vh;
+            margin-left: 100px;
+            margin-right: 100px;
+
+
+        }
+
+        .foot {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .footer h3 {
+            margin-bottom: 25px;
+            font-size: 18px;
+            margin: 10px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: white;
+            margin: 10px;
+            /* gap: 10px; */
+
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-bar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        /* Each Button */
+        .social {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        /* Inner Circle */
+        .social i {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+
+        /* Background Colors */
+        .youtube {
+            background: #ff1a1a;
+        }
+
+        .youtube i {
+            color: #ff0000;
+        }
+
+        .instagram {
+            background: #ff1a1a5f;
+        }
+
+        .instagram i {
+            color: #e1306c;
+        }
+
+        .facebook {
+            background: #2d7be0;
+        }
+
+        .facebook i {
+            color: #1877f2;
+        }
+
+        .twitter {
+            background: #7fd3ff;
+        }
+
+        .twitter i {
+            color: #000;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .linkedin i {
+            color: #0077b5;
+        }
+
+        .whatsapp {
+            background: #25d366;
+        }
+
+        .whatsapp i {
+            color: #25d366;
+        }
+
+        /* Hover Effect */
+        .social:hover {
+            width: 80px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="http://www.aucet.in/home/img/logo-mob.png">
+            <div class="navbar">
+                <a href="">Home^</a>
+                <a href="">Administration^</a>
+                <a href="">Departments^</a>
+                <a href="">Certres^</a>
+                <a href="">Facilities^</a>
+                <a href="">NISP^</a>
+                <a href="">IQAC^</a>
+                <a href="">AICTE^</a>
+                <a href="">AISHE^</a>
+                <a href="">E-governance^</a>
+                <a href="">Alumini Affairs^</a>
+                <a href="http://www.aucet.in/guvi">GUVI eBooks</a>
+            </div>
+            <div class="signin">
+                <a href="http://www.aucet.in/admin">Sign In</a>
+            </div>
+        </div>
+
+        <div class="TAMIL">
+            <h2 class="red">அண்ணா பல்கலைக்கழகம், சென்னை</h2>
+            <h2>பல்கலைக்கழக பொறியியல் கல்லூரி, திண்டிவனம்</h2>
+            <h1>University College of Engineering, Tindivanam</h1>
+            <h3>(A Constituent College of Anna University, Chennai)</h3>
+            <h4>Approved by AICTE |<span> AICTE: 1-4670706161</span></h4>
+        </div>
+
+        <div class="content">
+            <div class="theory">
+                <p>Welcome to University College of Engineering Tindivanam (A Constituent College of Anna University,
+                    Chennai) University College of Engineering Tindivanam (UCET) was started by the Government of Tamil
+                    Nadu in 2008 to offer high-quality engineering education. Our college began with four departments:
+                    Civil Engineering, Computer Science and Engineering, Electronics and Communication Engineering,
+                    Information Technology. In 2010, Civil Engineering (Tamil Medium) program was started to help
+                    students who prefer studying in Tamil. In 2025, Electrical and Computer Engineering was introduced.
+                    In 2026 Computer Science and Engineering(Aritificial Intellegence) is introduced. Every year, we
+                    welcome 300 students to our campus. Our college provides excellent facilities, including modern
+                    classrooms, well-equipped labs, a library, internet access, and comfortable hostel options. Our
+                    campus is a great place for students to learn, grow, and develop new ideas. We have experienced
+                    teachers, many with Ph.D. degrees, who guide and support students in their studies and research.
+                    They help students gain strong technical knowledge and practical skills needed for a successful
+                    engineering career. At UCET Tindivanam, we focus on giving students the best education,
+                    opportunities to work on projects, and a chance to build confidence and leadership skills. We aim to
+                    create talented engineers who are ready to meet the needs of today’s world. Come join us and start
+                    your journey towards a bright future!</p>
+            </div>
+            <img class="picture" src="http://www.aucet.in/home/img/ucet-home.png">
+        </div>
+
+        <div class="announcement">
+            <div class="announce">
+                <a href="" style="text-decoration: none;">Announcements</a>
+            </div>
+            <div class="day">
+                <a
+                    href="http://www.aucet.in/storage/app/public/announcements/kurCRuXdfSHF2ZdL2lmrNlj6Csp6g13Xvjka3dyr.jpg">Graduation
+                    Day 2025 Live |TNPCB-Awareness |Live Screening of State-level programme
+                    |Skills4Future level Program |</a>
+
+            </div>
+            <div class="view">
+                <a href="" style="text-decoration: none;">View More</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sec">
+                <h1>600+</h1>
+                <p>Under Graduates</p>
+            </div>
+            <div class="sec">
+                <h1>07</h1>
+                <p>UG Program</p>
+            </div>
+            <div class="sec">
+                <h1>07</h1>
+                <p>Students Clubs</p>
+            </div>
+            <div class="sec">
+                <h1>22</h1>
+                <p>Intern/Workshops</p>
+            </div>
+            <div class="sec">
+                <h1>30</h1>
+                <p>Awards/Prizes</p>
+            </div>
+            <div class="sec">
+                <h1>50</h1>
+                <p>Projects</p>
+            </div>
+        </div>
+
+        <div class="vision">
+            <h1>Vision</h1>
+            <p>We at UCET will impart futuristic technical education and instil high patterns of discipline
+                through our dedicated staff, who shall set global standards, making our students technologically
+                superior and ethically strong, who in turn shall improve the quality of life of the human race.</p>
+        </div>
+
+        <div class="mission">
+            <h1>Mission</h1>
+            <p>Our mission is to educate students from all over India, including those from the local and rural
+                areas, so they become enlightened individuals, improving the living standards of their families,
+                industry and society. We will provide individual attention, world-class quality education and
+                take care of character building.</p>
+        </div>
+
+        <div class="EVENTS">
+            <div class="event">
+                <a href="" style="text-decoration: none;">Events</a>
+            </div>
+            <div class="graduation">
+                <a href="https://www.youtube.com/watch?v=6dthW7HC1wM">UCET Graduation Day 2025 | Republic Day
+                    Celebration 2026 | Pongal Celebration 2026 at UCET |
+                    Kalloori Kalai Thiruvizha 2025 | Induction Day Program 2025 | Independence Day Celebration 2025 |
+                    Tech Saksham Foundation Drive | UI/UX Workshop by IT Department |</a>
+            </div>
+            <div class="VIEW">
+                <a href="" style="text-decoration: none;">View More</a>
+            </div>
+        </div>
+
+        <div class="section-1">
+            <div class="sec-1">
+                <h1>60+</h1>
+                <p>Faculty/Staffs</p>
+            </div>
+            <div class="sec-1">
+                <h1>450+</h1>
+                <p>UG Publications</p>
+            </div>
+            <div class="sec-1">
+                <h1>10+</h1>
+                <p>Books</p>
+            </div>
+            <div class="sec-1">
+                <h1>95+</h1>
+                <p>Events</p>
+            </div>
+            <div class="sec-1">
+                <h1>3+</h1>
+                <p>Patent</p>
+            </div>
+            <div class="sec-1">
+                <h1>5+</h1>
+                <p>R&D Grant</p>
+            </div>
+        </div>
+
+        <h1 style="display: flex; justify-content: center; padding: 20px 0; margin-top: 20px;">Departments</h1>
+        <div class="department">
+            <div class="dept">
+                <i class="fas fa-hard-hat"></i>
+                <a href="http://www.aucet.in/Department/civil">Civil Engineering</a>
+                <p>Established - 2008</p>
+            </div>
+            <div class="dept">
+                <i class="fas fa-microchip"></i>
+                <a href="http://www.aucet.in/Department/ece">Electronics and Communication Engineering</a>
+                <p>Established - 2008</p>
+            </div>
+            <div class="dept">
+                <i class="fa-solid fa-laptop"></i>
+                <a href="http://www.aucet.in/Department/cse">Computer Science and Engineering</a>
+                <p>Established - 2008</p>
+            </div>
+            <div class="dept">
+                <i class="fas fa-code"></i>
+                <a href="http://www.aucet.in/Department/it">Information Technology</a>
+                <p>Established - 2008</p>
+            </div>
+            <div class="dept">
+                <i class="fas fa-cogs"></i>
+                <a href="http://www.aucet.in/Department/ecoe">Electrical and Computer Engineering</a>
+                <p>Established - 2025</p>
+            </div>
+            <div class="dept">
+                <i class="fa-solid fa-laptop"></i>
+                <a href="http://www.aucet.in/Department/cse">CSE(Artificial intelligence)</a>
+                <p>Established - 2026</p>
+            </div>
+            <div class="dept">
+                <i class="fas fa-atom" style=" border-color: 1px solid red;"></i>
+                <a href="http://www.aucet.in/Department/sah">Science and Humanities</a>
+                <p>Established - 2008</p>
+            </div>
+        </div>
+
+        <h1 style="display: flex; justify-content: center;">Centres</h1>
+        <div class="CENTER">
+            <a href="http://access.auerc.com/uoctin" class="center">
+                <img src="http://www.aucet.in/home/img/library.jpg">
+                <div class="text">Library</div>
+            </a>
+
+            <a href="http://www.aucet.in/placement" class="center">
+                <img src="http://www.aucet.in/home/img/placement.jpg">
+                <div class="text">Placement</div>
+            </a>
+
+            <a href="http://www.aucet.in/facilities/res/Sports.pdf" class="center">
+                <img src="http://www.aucet.in/home/img/sports.jpg">
+                <div class="text">Sports</div>
+            </a>
+
+            <a href="http://www.aucet.in/facilities/health-centre" class="center">
+                <img src="http://www.aucet.in/home/img/health.jpg">
+                <div class="text">Health Centre</div>
+            </a>
+        </div>
+
+        <h1 style="display: flex; justify-content: center; padding: 20px 0; margin-top: 20px;">Clubs</h1>
+        <div class="CLUB">
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/nss.png ">
+                <h1>NSS</h1>
+            </div>
+            <div class="club">
+                <img src=" http://www.aucet.in/home/res/nso.png">
+                <h1>NSO</h1>
+            </div>
+            <div class="club">
+                <img src=" http://www.aucet.in/home/res/yrc.png">
+                <h1>YRC</h1>
+            </div>
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/arts.png">
+                <h1>Fine Arts Club</h1>
+            </div>
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/tamil.png">
+                <h1>Tamil Literary Club</h1>
+            </div>
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/english.png">
+                <h1>English Literary Club</h1>
+            </div>
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/anti-drugs.png">
+                <h1>Anti Drug Club</h1>
+            </div>
+            <div class="club">
+                <img src="http://www.aucet.in/home/res/kalai.jpg">
+                <h1>Kallori Kalai Thiruvizha</h1>
+            </div>
+        </div>
+
+        <div class="message">
+            <h1>Dean's Message</h1>
+            <p>Engineering is not just a degree, but a way of thinking. Even though the number of
+                Engineers in India has proliferated over recent years, the demand for good engineers has remained
+                constant. The first step of being a successful engineer is to have a systematic and
+                efficient learning. It is very important for a student to understand the fundamentals
+                and basic principles of engineering. There is no more important mission for an engineering
+                college than the preparation of its graduates for their careers. At University College
+                of Engineering, Tindivanam, we’re taking on that challenge by broadening the education of
+                our students. We master the technical aspects of engineering at the curriculum’s core and
+                likely add new dimensions that will better prepare the students for the world of today and tomorrow</p>
+            <h4>Prof Arularasan R,Dean </h4>
+            <div class="know">
+                <a href="https://aubit.irins.org/profile/437849">Know More</a>
+            </div>
+            <div class="img-dean">
+                <img src="http://www.aucet.in/home/img/DrRArularasan.jpg">
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="http://www.aucet.in/home/img/group1.jpeg">
+            <img src="http://www.aucet.in/home/img/group2.jpeg">
+            <img src="http://www.aucet.in/home/img/group3.jpeg">
+
+            <img src="http://www.aucet.in/home/img/group1.jpeg">
+            <img src="http://www.aucet.in/home/img/group2.jpeg">
+            <img src="http://www.aucet.in/home/img/group3.jpeg">
+        </div>
+
+        <div class="container">
+            <div class="footer">
+                <div class="foot">
+                    <h3>Academics</h3>
+                    <a href="http://www.aucet.in/exam-cell">Exam Cell</a>
+                    <a href="https://cac.annauniv.edu/">Academic Schedules</a>
+                    <a href="http://www.aucet.in/">AICTE Approval</a>
+                    <a href="https://fb.annauniv.edu/fbreport/index.php">Feedback Portal</a>
+                </div>
+
+                <div class="foot">
+                    <h3>Anna University</h3>
+                    <a href="https://www.annauniv.edu/pdf/Acts%20&%20Statues-New.pdf">Acts & Statues</a>
+                    <a href="https://www.annauniv.edu/pdf/MandatoryDisclosure_2024-25.pdf">Mandatory Disclosure</a>
+                    <a href="https://gverify.annauniv.edu/">Genuineness Verification</a>
+                    <a href="https://www.annauniv.edu/nirf.php">NIRF</a>
+                    <a href="http://www.aucet.in/departments">Departments</a>
+                </div>
+
+                <div class="foot">
+                    <h3>Downloads</h3>
+                    <a href="http://www.aucet.in/scholarships">Scholarship Forms</a>
+                    <a href="http://www.aucet.in/service-request">Service Request Form (KCC)</a>
+                    <a href="http://www.aucet.in/home/res/forms/Performance%20and%20Potential%20form.pdf">Performance
+                        and Potential</a>
+                    <a href="http://www.aucet.in/home/res/forms/Hall%20Booking%20Form.pdf">LAB/Hall Booking Form
+                        (KCC)</a>
+                    <a href="http://www.aucet.in/home/res/forms/FDP.pdf">FDP Application Form</a>
+                </div>
+
+                <div class="foot">
+                    <h3>Facilities</h3>
+                    <a href="http://www.aucet.in/posh">POSH</a>
+                    <a href="http://www.aucet.in/grievance">Student Grievance Redressal</a>
+                    <a href="http://www.aucet.in/facilities/health-centre">Health Centre</a>
+                    <a href="http://access.auerc.com/uoctin">Library</a>
+                </div>
+
+                <div class="foot">
+                    <h3>Contact Details</h3>
+                    <p>UCET Melpakkam, Tindivanam 604307</p>
+                    <p>Office: 04147-224477</p>
+                    <p>Email: deanoffice.ucet@gmail.com</p>
+                    <p>TNEA Enq: 04147-224477</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                Copyright © 2026 UCET |
+                Developed by <a href="http://www.aucet.in/web-team" style="color: white;">UCET Web Team</a> |
+                Maintained by IT Department
+            </div>
+        </div>
+
+        <div class="social-bar">
+
+            <a href="#" class="social youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#" class="social instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="social facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="social twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="#" class="social linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" class="social whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+    </div>
+</body>
+
+</html>
