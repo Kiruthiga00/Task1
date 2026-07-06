@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Tamil=87;
+        let English=90;
+        let Maths=85;
+        let Science=70;
+        let Social=75;
+        let total=Tamil+English+Maths+Science+Social;
+        let Average=total/5;
+        let grade;
+        if (Average>=90){
+            grade="O";
+        }
+        else if(Average>=80){
+            grade="A+";
+        }
+        else if(Average>=70){
+            grade="A";
+        }
+        else if(Average>=60){
+            grade="B+";
+        }
+        else if(Average>=50){
+            grade="C"
+        }
+        else{
+            grade="U"
+        }
+        console.log("Total: " + total);
+        console.log("Average: " + Average);
+        console.log("Grade: " + grade);
+    </script>
+</body>
+</html>
