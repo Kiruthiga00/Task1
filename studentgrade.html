@@ -4,32 +4,35 @@
 </head>
 <body>
     <script>
-        let Tamil=87;
+        let Tamil=7;
         let English=90;
         let Maths=85;
         let Science=70;
         let Social=75;
+        
         let total=Tamil+English+Maths+Science+Social;
         let Average=total/5;
         let grade;
-        if (Average>=90){
+    if (Tamil>=35 && English>=35 && Maths>=35 && Science>=35 && Social>=35){
+         if (Average>=90){
             grade="O";
-        }
-        else if(Average>=80){
+         }
+         else if(Average>=80){
             grade="A+";
-        }
-        else if(Average>=70){
+         }
+         else if(Average>=70){
             grade="A";
-        }
-        else if(Average>=60){
+         }
+         else if(Average>=60){
             grade="B+";
-        }
-        else if(Average>=50){
+         }
+         else if(Average>=50){
             grade="C"
-        }
-        else{
-            grade="U"
-        }
+         }
+    }
+    else{
+            grade="Fail"
+    }
         console.log("Total: " + total);
         console.log("Average: " + Average);
         console.log("Grade: " + grade);
