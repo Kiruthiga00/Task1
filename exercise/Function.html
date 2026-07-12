@@ -1,0 +1,106 @@
+<script>
+    function ammatea(){
+        console.log("Unoda Tea Ready");
+    }
+    ammatea();
+</script>
+
+
+<!-- Function call -->
+<script>
+function sampleFun(){
+    console.log(2+3);
+}
+sampleFun()
+</script>
+
+
+<!-- Function with parameter -->
+<script>
+function sampleFun(a,b){
+    console.log(a+b);
+}
+sampleFun(10,20)
+sampleFun(5,6)
+</script>
+
+
+<!-- function return -->
+<script>
+function sampleFun(a,b){
+    return a+b;
+}
+var x=sampleFun(10,20)
+console.log(x)
+// console.log(sampleFun(10,20))
+</script>
+
+<script>
+function check(num) {
+    if (num % 2 == 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+console.log(check(8));
+</script>
+
+
+<!-- anonymous function -->
+<script>
+var sampleFun=function(){
+    console.log("Hello World");
+}
+sampleFun()
+</script>
+
+
+<!-- callback function -->
+<script>
+    function mainFun(callback){
+        console.log("main function execued");
+         callback()
+    }
+    //  console.log(callback)
+
+    function call(){
+        console.log("callback function executed");
+    }
+    mainFun(call)
+    // callback()
+</script>
+
+
+<!-- callback function -->
+<script>
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function message() {
+    console.log("Welcome to JavaScript!");
+}
+
+greet("Kiruthiga", message);
+
+
+// function add(a, b, callback) {
+//     let sum = a + b;
+//     callback(sum);
+// }
+
+// add(10, 20, function(result) {
+//     console.log("Sum is: " + result);
+// });
+</script>
+
+
+<!-- <self-invoking funtion -->
+<script>
+    (function() {
+        console.log("Self-invoking function executed");
+    })();
+</script>
+ 
