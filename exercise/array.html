@@ -1,0 +1,54 @@
+<script>
+    let numbers = [2, 4, 8, 12, 16];
+    console.log(numbers);
+</script>
+
+
+<script>
+    let a = [];
+    console.log(a);
+
+    let b = [10, 20, 30];
+    console.log(b);
+</script>
+
+
+<script>
+    // let c = new Array(10, 20, 30);
+    // console.log(c);
+
+    const d = new Array();
+    const e = new Array(3);
+    const f = new Array("3");
+    const g = new Array("Saab", "Volvo", "BMW");
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+</script>
+
+
+<script>
+
+    const marks = [70, 90, 99, 30, 75];
+
+    let total = 0;
+    let result = "Pass";
+    let highest = marks[0];
+
+    for (let i = 0; i < 5; i++) {
+        if (marks[i] < 35) {
+            result = "Fail";
+        }
+        total = total + marks[i];
+        if (marks[i] > highest) {
+            highest = marks[i];
+        }
+        console.log(marks[i]);
+    }
+    console.log(result);
+    console.log(total);
+    console.log(highest);
+    // total=marks[0]+marks[1]+marks[2]+marks[3]+marks[4];
+    // console.log(total);
+</script>

@@ -1,0 +1,52 @@
+<script>
+    const mobile1 = {
+        brand: "samsung",
+        price: 20000,
+        Storage: {
+            ram: "4gb",
+            rom: "64gb"
+        }
+    }
+    const mobile2 = {
+        brand: "Android",
+        price: 22000,
+        Storage: {
+            ram: "8gb",
+            rom: "128gb"
+        }
+    }
+    const mobile3 = {
+        brand: "Apple",
+        price: 70000,
+        Storage: {
+            ram: "8gb",
+            rom: "512gb"
+        }
+    }
+    mobile1.name = "readme"
+    console.log(mobile1);
+    // let result = ("price" in mobile1);
+    // console.log(mobile1.brand);
+    // console.log(mobile2.Storage.ram);
+    // console.log(mobile3.price);
+</script>
+
+
+<!-- with function -->
+<script>
+    const mobile4 = {
+        brand: "samsung",
+        price: 20000,
+        Storage: {
+            ram: "4gb",
+            rom: "64gb"
+        },
+        browse: function () {
+            console.log("5g speed browsing")
+            // console.log(this.brand + "5g speed browsing")                                      
+        }
+    }
+    mobile4.browse()
+    // this.browse=mobile4.browse;
+    // this.browse();
+</script>
