@@ -1,0 +1,163 @@
+<!-- for...of -->
+ <script>
+//     let name = "Kiruthiga";
+
+// for (let letter of name) {
+//     console.log(letter);
+// }
+
+
+let fruits = ["Apple", "Orange", "Mango"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+ </script>
+
+
+<!-- for...in -->
+<script>
+let name = "Kiruthiga";
+
+for (let letter in name) {
+    console.log(name[letter]);
+}
+
+
+// let fruit = ["Apple", "Orange", "Mango"];
+
+// for (let index in fruit) {
+//     console.log(index);
+// }
+</script>
+
+
+<!-- flatMap() -->
+ <script>
+// let numbers = [1, 2, 3];
+// let result = numbers.flatMap(num => [num, num * 2]);
+// console.log(result);
+
+let number=[1,2,3];
+let result = number.flatMap(multiple);
+console.log(result);
+function multiple(x){
+    console.log(x);
+    return[x,x*5];
+}
+ </script>
+
+
+<!-- filter() -->
+ <script>
+    let array=[16,27,8,29,75];
+    let newArray= array.filter(element);
+    console.log(newArray);
+    function element(x){
+        return x>18;
+    }
+ </script>
+
+
+<!-- reduce() -->
+ <script>
+// let numbers = [10, 20, 30, 40];
+// let sum = numbers.reduce(function(total, current) {
+//     return total + current;
+// });
+// console.log(sum);
+
+// let numbers = [10, 20, 30, 40];
+// let sum=numbers.reduce(summ);
+// function summ(total,current){
+//     return total+current;
+// }
+// console.log(sum);
+ </script>
+
+
+<!-- reduceRight() -->
+ <script>
+let numbers = [10, 20, 30, 40];
+let sum=numbers.reduce(summ);
+function summ(total,current){
+    return total+current;
+}
+console.log(sum);
+ </script>
+
+
+<!-- every() -->
+ <script>
+    let a=[16,27,8,29,75];
+    let newarray= a.every(element);
+    console.log(newarray);
+    function element(x){
+        return x>18;
+    }
+
+// let numbers = [10, -5, 30];
+
+// let result = numbers.every(num => num > 0);
+
+// console.log(result);
+ </script>
+ 
+
+ <!-- some() -->
+  <script>
+    let b=[16,27,8,29,75];
+    let c= b.some(element);
+    console.log(c);
+    function element(x){
+        return x>18;
+    }
+  </script>
+
+
+<!-- from() -->
+ <script>
+let k = new Set([10, 20, 30]);
+let l = Array.from(k);
+console.log(l);
+ </script>
+
+
+<!-- keys() -->
+ <script>
+let g = [10, 20, 30];
+let h = g.keys();
+for (let key of h) {
+    console.log(key);
+}
+ </script>
+
+
+<!-- entries() -->
+  <script>
+let i= [10, 20, 30];
+let j = i.entries(i);
+for (let [index,value] of j) {
+    console.log(index,value);
+}
+ </script>
+
+
+<!-- with() -->
+  <script>
+let m= [10, 20, 30];
+let n = m.with(1,100);
+console.log(m);
+console.log(n);
+ </script>
+
+ 
+ <!-- spread(...) -->
+  <script>
+    let p= [10, 20, 30];
+    let q=[...p];
+    console.log(q);
+  </script>
+
+
+
