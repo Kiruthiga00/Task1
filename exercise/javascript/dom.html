@@ -1,27 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button id="btn">ON</button>
-   
-    <script>
-        function button(){
-            
-            const element=document.getElementById("btn");
-            console.log(typeof element)
-            console.log(element.innerText)
+<!-- <!DOCTYPE html>
+<html>
 
-            if(element.innerText=="ON"){
-                element.innerText=OFF
+<body>
+    <h1 id="heading-1">Hello</h1>
+    <h1 id="heading-2">Hi</h1>
+    <h1 id="heading-3">Hlo</h1>
+
+    <button onclick="changeText()">Change Update</button>
+
+    <script> 
+        function changeText() {
+
+            const element = document.getElementById("heading-1");
+            console.log(typeof element);
+            console.log(element.innerText);
+
+            if (element.innerText == "Hello") {
+                element.innerText = "Hi";
+            } else {
+                element.innerText = "Hello";
             }
-            else{
-                element.innerText=OFF
-            }
+
         }
     </script>
+
+</body>
+
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+  
+<button id="btn" onclick="button()">ON</button>
+
+<script>
+function button() {
+    const element = document.getElementById("btn");
+
+    console.log(typeof element);
+    console.log(element.innerText);
+
+    if (element.innerText == "ON") {
+        element.innerText = "OFF";
+    } else {
+        element.innerText = "ON";
+    }
+}
+</script>
+
+</body>
+</html>   -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="count">0</h1>
+
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+<button onclick="reset()">Reset</button>
+
+<script>
+function increase() {
+    const element = document.getElementById("count");
+    let value = Number(element.innerText);
+    element.innerText = value + 1;
+}
+
+function decrease() {
+    const element = document.getElementById("count");
+    let value = Number(element.innerText);
+    element.innerText = value - 1;
+}
+
+function reset() {
+    const element = document.getElementById("count");
+    element.innerText = 0;
+}
+</script>
+
+</body>
+</html>   -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Live Character Counter</h2>
+
+<textarea id="text" rows="5" cols="30" onkeyup="countChar()"></textarea>
+
+<p>Characters: <span id="count">0</span></p>
+
+<script>
+function countChar() {
+
+    const text = document.getElementById("text");
+    const count = document.getElementById("count");
+
+    count.innerText = text.value.length;
+
+}
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="password" id="password">
+
+<button id="btn" onclick="showHide()">Show</button>
+
+<script>
+function showHide() {
+
+    const password = document.getElementById("password");
+    const btn = document.getElementById("btn");
+
+    if (password.type == "password") {
+        password.type = "text";
+        btn.innerText = "Hide";
+    } else {
+        password.type = "password";
+        btn.innerText = "Show";
+    }
+
+}
+</script>
+
 </body>
 </html>
