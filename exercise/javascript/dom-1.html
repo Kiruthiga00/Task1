@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+<body>
+
+<input id="name" type="text">
+<button onclick="greet()">Greet</button>
+<h2 id="message"></h2>
+
+<script>
+function greet() {
+    const input = document.getElementById("name");
+    const name = input.value;
+    const message = document.getElementById("message");
+
+    if (name == "") {
+       message.innerText="Please enter text!"
+    }
+    else {
+         message.innerHTML = '<img src="https://pbs.twimg.com/media/FgOkmTFaYAAGzYY.jpg" width="250">';
+    }
+}
+</script>
+
+</body>
+</html>
