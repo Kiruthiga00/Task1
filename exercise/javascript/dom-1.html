@@ -15,18 +15,121 @@ body{
 
 <script>
 function greet() {
-    const input = document.getElementById("name");
-    const name = input.value;
+    const input = document.getElementById("name").value;
+    console.log(input);
     const message = document.getElementById("message");
 
-    if (name == "") {
+    if (input == "") {
        message.innerText="Please enter text!"
     }
     else {
-         message.innerHTML = '<img src="https://pbs.twimg.com/media/FgOkmTFaYAAGzYY.jpg" width="250">';
+        message.innerHTML = '<img src="https://pbs.twimg.com/media/FgOkmTFaYAAGzYY.jpg" width="250">';
     }
 }
 </script>
 
+</body>
+</html> 
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="name">
+    <button onclick="greet()" >Greet</button>
+     
+    <h1 id="message"></h1>
+
+    <script>
+        var name=document.getElementById("name");
+        var message=document.getElementById("message")
+        function greet(){
+            message.innerHTML='<img src="https://pbs.twimg.com/media/FgOkmTFaYAAGzYY.jpg" width="250">';
+        }
+    </script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="clock">00:00:00</h1> 
+
+    <script>
+const clockNew=document.getElementById("clock");
+function updateClock() {
+    const time = new Date();
+    const h = String(time.getHours()).padStart(2, '0');
+    const m = String(time.getMinutes()).padStart(2, '0');
+    const s = String(time.getSeconds()).padStart(2, '0');
+
+    clockNew.innerText = h + ":" + m + ":" + s;
+}
+updateClock();
+setInterval(updateclock, 1000); 
+    </script>
+</body>
+</html> 
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="height: 100px; text-align: center;">
+        <h1 id="word">Hi Hello</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <input type="range" min="10" max="48" value="22" id="size">
+    </div>
+
+    <script>
+        const word = document.getElementById('word');
+        const size = document.getElementById('size');
+
+        size.addEventListener('input', () => {
+            // Appending 'px' ensures the CSS property applies correctly
+            word.style.fontSize = size.value + 'px';
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <input onclick="mysubmit()" type="checkbox" id="check" >
+    <button id="btn" disabled>submit</button> 
+    <script>
+        const box =  document.getElementById("check");
+        console.log(box);
+
+        const button =   document.getElementById("btn");
+        function mysubmit(){
+            if (box.checked == true ){   //checked means enter (tick)
+                button.disabled = false;
+            }else{
+                button.disabled = true;   //not clicked  disabled
+            }
+        }
+    </script>  
 </body>
 </html>
