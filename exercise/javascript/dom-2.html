@@ -1,8 +1,6 @@
 <!-- <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -13,17 +11,61 @@
     const head=document.getElementById("title");
     console.log(head.innerText);
 
+    const heading=document.createElement("h1");
+    heading.innerText="Welcome to Javascript";
+    document.body.appendChild(heading);
+    console.log(heading);
+    
+    const h=document.createElement("h2");
+    h.innerText="Welcome to DOM";
+    document.body.appendChild(h);
+    console.log(h);
+    h.remove();
+    // document.body.removeChild(h);
      function change(){
         head.innerText="Bye World "
     }
 
     </script>
 </body>
-</html> -->
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="h1"></h1>
+    <button onclick="create()">Create</button>
+    <script>
+    
+    const heading=document.createElement("h1");
+    heading.innerText="Welcome to Javascript";
+    document.body.appendChild(heading);
+    console.log(heading);
+    document.body.insertBefore(heading, document.getElementById("h1"));
+    
+    const h=document.createElement("h2");
+    h.innerText="Welcome to DOM";
+    document.body.appendChild(h);
+    console.log(h);
+    
+     function create(){
+        const head=document.getElementById("h1");
+        console.log(head);
+        head.innerText="Hello World "
+        
+    }
+
+    </script>
+</body>
+</html>  -->
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Document</title>
@@ -43,8 +85,42 @@
                 var num2=Number(document.getElementById("num2").value);
 
            para.innerText="Total:"+ (num1+num2);
-    }
+    } 
 
    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="one">4</h4>
+    <h4 id="two">6</h4>
+    <h4 id="three">5</h4>
+    <h4 id="four">10</h4> 
+    <input id="num" type="number">
+    <button onclick="delete1()">Delete</button>
+    <script>
+            var num = document.getElementById("num");
+            var element = document.querySelectorAll("h4");
+
+        function delete1(){
+            var index = Number(num.value) ;
+
+            if (index >= 0 && index < element.length) {
+                element[index].remove();
+            }
+            else {
+                alert("Invalid Index");
+            }
+        }
+        console.log(element);
+    </script>
 </body>
 </html>
