@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Document</title>
@@ -28,6 +28,54 @@
             }
         }
 
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="text"  onkeyup="letter()">
+    <p id="result"></p>
+
+    <script>
+        var text=document.getElementById("text");
+        var result=document.getElementById("result");
+        // text.addEventListener("input",letter);
+
+        function letter(){
+            result.innerText=text.value;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="add()">Add</button>
+    <div id="result"></div>
+
+    <script>
+            var result=document.getElementById("result");
+        function add(){
+            var n=document.createElement("h1");
+            console.log(n);
+           n.innerText="Hello";
+           result.append(n);
+        }
     </script>
 </body>
 </html>

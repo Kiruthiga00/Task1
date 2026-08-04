@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>All Products</title>
+</head>
+<body>
+
+    <h1>All Products</h1>
+
+    <div id="product"></div>
+
+    <script>
+
+        // API URL
+        const apiUrl = "https://fakestoreapi.com/products";
+
+        fetch(apiUrl)
+
+        .then(function(response){
+
+            return response.json();
+
+        })
+
+        .then(function(products){
+
+            const productDiv = document.getElementById("product");
+
+            // Loop through all products
+            for(let i = 0; i < products.length; i++){
+
+                let productId = products[i].id;
+                let productTitle = products[i].title;
+                let productPrice = products[i].price;
+                let productDescription = products[i].description;
+                let productCategory = products[i].category;
+                let productImage = products[i].image;
+                let productRating = products[i].rating.rate;
+                let productCount = products[i].rating.count;
+
+                productDiv.innerHTML += `
+                    <hr>
+
+                    <h2>${productTitle}</h2>
+
+                    <img src="${productImage}" width="150">
+
+                    <p><strong>ID:</strong> ${productId}</p>
+
+                    <p><strong>Price:</strong> $${productPrice}</p>
+
+                    <p><strong>Category:</strong> ${productCategory}</p>
+
+                    <p><strong>Description:</strong> ${productDescription}</p>
+
+                    <p><strong>Rating:</strong> ${productRating} ⭐</p>
+
+                    <p><strong>Reviews:</strong> ${productCount}</p>
+                `;
+            }
+
+        })
+
+        .catch(function(error){
+
+            console.log(error);
+
+        });
+
+    </script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store API</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 220px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fake Store Products</h1>
+
+    <div id="products"></div>
+
+    <script>
+        let products = [];
+        const productContainer = document.getElementById("products");
+        fetch("https://fakestoreapi.com/products")
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                console.log(products);
+                for (let i = 0; i < products.length; i++) {
+                    productContainer.innerHTML += `
+                        <div class="card">
+                            <img src="${products[i].image}" alt="">
+                            <h3>${products[i].title}</h3>
+                            <p class="price">$${products[i].price}</p>
+                        </div>
+                    `;
+                }
+
+            })
+
+
+    </script>
+
+</body>
+
+</html>

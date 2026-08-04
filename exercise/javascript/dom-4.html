@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition: 3s;
+        }
+        .widthmax{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="change()">Change Color</button>
+
+    <script>
+        var box=document.getElementById("box");
+        console.log(box);
+
+        function change(){
+            // box.style.backgroundColor="black";
+            box.setAttribute("class","widthmax");
+            // box.classList.add("widthmax");
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="change()">Change Color</button>
+    <script>
+        var button=document.getElementById("btn");
+        console.log(button);
+
+        function change(){
+            button.style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Name</h1>
+    <button id="btn-1" onclick="change(event)">Karthick</button>
+    <button id="btn-2" onclick="change(event)">Raghu</button>
+    <button id="btn-3" onclick="change(event)">Samy</button>
+
+    <script>
+          var h1=document.getElementById("h1");
+          var btn=document.querySelectorAll("button");
+          console.log(btn);
+
+          function change(event){
+                  h1.innerText=event.target.innerText;
+          }
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="delete1(event)">one</h1>
+    <h1 onclick="delete1(event)">two</h1>
+    <h1 onclick="delete1(event)">three</h1>
+    <h1 onclick="delete1(event)">four</h1>
+    <h1 onclick="delete1(event)">five</h1>
+    <h1 onclick="delete1(event)">six</h1>
+    <h1 onclick="delete1(event)">seven</h1>
+    <h1 onclick="delete1(event)">eight</h1>
+    <h1 onclick="delete1(event)">nine</h1>
+    <h1 onclick="delete1(event)">ten</h1>
+
+    <script>
+        var h1=document.getElementById("h1");
+        function delete1(event){
+            event.target.remove();
+        }
+    </script>
+</body>
+</html>
