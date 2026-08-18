@@ -76,12 +76,26 @@
 # print("All common stations:", common)
 
 
-no = 21
-div = 2
-while div < no: 
-    if no % div == 0:   # 9 % 2 != 0
-        print('Not A Prime Number')
-        break
-    div+=1
-else:
-    print('Prime Number')
+# no = 21
+# div = 2
+# while div < no: 
+#     if no % div == 0:   # 9 % 2 != 0
+#         print('Not A Prime Number')
+#         break
+#     div+=1
+# else:
+#     print('Prime Number')
+
+
+# police, thief = 0, 40
+# step = 0
+# while thief > police:
+#     police = police + 5
+#     thief = thief + 2
+#     step+=1
+# print(police)
+# print(step)
+
+
+
+ 
