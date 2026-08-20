@@ -76,11 +76,22 @@
 # print("All common stations:", common)
 
 
-# no = 21
+no = 21
+div = 2
+while div < no: 
+    if no % div == 0:  
+        print('Not A Prime Number')
+        break
+    div+=1
+else:
+    print('Prime Number')
+
+
+# no = 1319
 # div = 2
 # while div < no: 
-#     if no % div == 0:   # 9 % 2 != 0
-#         print('Not A Prime Number')
+#     if no % div == 0:   
+#         print('Prime Number')
 #         break
 #     div+=1
 # else:
